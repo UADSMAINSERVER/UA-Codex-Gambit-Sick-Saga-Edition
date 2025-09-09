@@ -1,0 +1,53 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.table-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.table-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.zone {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+#dealer-area {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#player-area {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ritual-button {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  z-index: 2;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
