@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <title>Waiting for Players?</title>
-  </head>
-  <body>
-    <h1> Waiting for players to join...</h1>
-    <h2>Please choose your side</h2>
-    <table>
-      <div>Dealer♤</div>
-      <div>Player♧</div>
-    </table>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UA Blackjack Lobby</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="lobby">
+    <h1>UA Codex: Blackjack Ritual</h1>
+    <p>Select your role to begin the saga:</p>
+
+    <div class="role-select">
+      <button id="dealerBtn">Dealer</button>
+      <button id="playerBtn">Player</button>
+    </div>
+
+    <div id="playerCount" class="hidden">
+      <label for="numPlayers">Choose number of players (1–5):</label>
+      <input type="number" id="numPlayers" min="1" max="5" />
+      <button id="startGameBtn">Enter the Den</button>
+    </div>
+
+    <footer>
+      <p class="codex-trigger">Codex Entry: Blackjack Initiation</p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </div>
+</body>
 </html>
