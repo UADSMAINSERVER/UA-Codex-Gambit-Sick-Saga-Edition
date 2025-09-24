@@ -1,64 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>UA: Codex Gambit – Sick Saga Edition Casino</title>
-  <link rel="stylesheet" href="assets/sick-saga-style.css">
-  <style>
-    body {
-      background-color: #0f0f0f;
-      color: #f5f5f5;
-      font-family: 'Courier New', Courier, monospace;
-      text-align: center;
-      padding-top: 50px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0;
-    }
-    h2 {
-      font-weight: normal;
-      color: #aaa;
-      margin-top: 0;
-    }
-    .menu {
-      margin-top: 40px;
-    }
-    .menu a {
-      display: block;
-      margin: 20px auto;
-      padding: 15px 30px;
-      background-color: #222;
-      color: #0ff;
-      text-decoration: none;
-      border: 2px solid #0ff;
-      width: 300px;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-    .menu a:hover {
-      background-color: #0ff;
-      color: #000;
-    }
-    .sigil {
-      margin-top: 60px;
-      opacity: 0.3;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UA Codex Casino</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>UA: Codex Gambit</h1>
-  <h2>Sick Saga Edition Casino</h2>
-  <p>Forged in downtime. Launched in resilience.</p>
+  <div class="vault-title">🎰 UA Codex Casino: Sick Saga Edition</div>
 
-  <div class="menu">
-    <a href="blackjack/index.html">🎴 Enter Blackjack Ritual</a>
-    <a href="terminal/index.html">📜 View Codex Logs</a>
-    <a href="dealer-log/index.html">🃏 Dealer Archives</a>
+  <div class="scanner-container">
+    <img src="assets/security/scanners/scanner.png" alt="Keycard Scanner" class="scanner-img" />
+    <select id="keycard-select">
+      <option value="">-- Insert Keycard --</option>
+      <option value="1">🟨 Golden Card (Level 1)</option>
+      <option value="2">⬜ Platinum Titan Edition (Level 2)</option>
+      <option value="3">💎 Diamond Pink Proximity (Level 3)</option>
+    </select>
+    <button onclick="scanKeycard()">Scan</button>
+    <div id="scan-result"></div>
   </div>
 
-  <div class="sigil">
-    <img src="assets/logos/sick-saga.png" alt="UA Sigil" width="120">
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
